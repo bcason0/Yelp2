@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 
+
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Business {
@@ -29,7 +30,18 @@ public class Business {
     private String review_count;
 
     @Column(name = "IS_CLOSE")
-    private String isClose;
+    private String is_close;
+
+    @Column(name = "SNIPPET_TEXT")
+    private String snippet_text;
+
+    @Column(name = "IMAGE")
+    private String image_url;
+
+    @Column(name = "STAR_COUNT")
+    private String rating_img_url_large;
+
+
 
     public Long getBusiness_id() {
         return business_id;
@@ -79,12 +91,36 @@ public class Business {
         this.review_count = review_count;
     }
 
-    public String getIsClose() {
-        return isClose;
+    public String getIs_close() {
+        return is_close;
     }
 
-    public void setIsClose(String isClose) {
-        this.isClose = isClose;
+    public void setIs_close(String is_close) {
+        this.is_close = is_close;
+    }
+
+    public String getSnippet_text() {
+        return snippet_text;
+    }
+
+    public void setSnippet_text(String snippet_text) {
+        this.snippet_text = snippet_text;
+    }
+
+    public String getImage_url() {
+        return image_url;
+    }
+
+    public void setImage_url(String image_url) {
+        this.image_url = image_url;
+    }
+
+    public String getRating_img_url_large() {
+        return rating_img_url_large;
+    }
+
+    public void setRating_img_url_large(String rating_img_url_large) {
+        this.rating_img_url_large = rating_img_url_large;
     }
 }
 
