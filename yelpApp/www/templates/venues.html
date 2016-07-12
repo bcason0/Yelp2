@@ -1,0 +1,39 @@
+<ion-view view-title="WhereThePartyAt!">
+  <ion-content class="padding">
+    <h2>Venues</h2>
+
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" ng-model="search" class="form-control" placeholder="Search ...">
+      </label>
+    </div>
+  </div>
+ 
+  <div class="list card" ng-repeat="venue in theVenues|filter:search| limitTo: 15">
+    <div class="padding card-header">
+      <h3 class="name">
+      {{venue.name}}<br /></h3>
+      <ul class="lists">
+        <li class="ion-ios-telephone"> {{venue.phone}}</li>
+          <li class="ion-link"> <a href="{{venue.mobile_url}}">Click For More Info</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="item item-body">
+      <img class="venue-image" src="{{venue.image_url}}">
+      <p>
+        {{venue.snippet_text}}
+      </p>
+      <p>
+        <img class="review-stars" src="{{venue.rating_img_url_large}}">
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/yelp_logo_xsmall.png">
+      </p>
+      <p>Based on {{venue.review_count}} reviews</p>
+      
+    </div>
+  </div>
+
+  </ion-content>
+</ion-view>
