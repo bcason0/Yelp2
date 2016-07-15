@@ -1,10 +1,10 @@
 h2{
 	text-align: center;
-	color: grey;
+	color: darkgreen;
 }
 
 a {
-	color: grey;
+	color: darkgreen;
 	text-decoration: none;
 }
 
@@ -12,6 +12,12 @@ a {
 	width: 250px;
 	height: 250px;
 	margin-left: 35px;
+}
+
+img.venue-image {
+	border-width: 4px;
+	border-color: darkgreen;
+	border-style: solid;
 }
 
 .lists{
@@ -22,7 +28,7 @@ a {
 
 .name{
 	text-align: center;
-	color: grey;
+	color: darkgreen;
 }
 
 .button.button-clear {

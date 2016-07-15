@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 
-
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Business {
@@ -40,7 +39,6 @@ public class Business {
 
     @Column(name = "STAR_COUNT")
     private String rating_img_url_large;
-
 
 
     public Long getBusiness_id() {
@@ -122,5 +120,6 @@ public class Business {
     public void setRating_img_url_large(String rating_img_url_large) {
         this.rating_img_url_large = rating_img_url_large;
     }
+
 }
 
