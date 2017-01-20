@@ -10,7 +10,7 @@ public class Add {
     {
         int id = 0;
         Class.forName("com.mysql.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/yelpDB5?autoReconnect=true&useSSL=false","root","");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/yelpdb?autoReconnect=true&useSSL=false","root","Eagles1181!");
 
         try {
             Statement statement = con.createStatement();
